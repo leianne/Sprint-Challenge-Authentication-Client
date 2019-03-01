@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <FormView />
+        <Route path='/login' component={FormView}/>
       </div>
     );
   }
