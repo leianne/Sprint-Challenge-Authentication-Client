@@ -10,14 +10,12 @@ const JokesComponent = props => {
         <>
             {props.jokes.map(joke => {
                 return(
-                    <>
-                        <Card className='card' >
+                        <Card key={joke.id} className='card' >
                             <CardContent>
                                 <Typography color="textSecondary" >Dad Joke</Typography>
                                 <Typography component='p'>{joke.joke}</Typography>
                             </CardContent>
                         </Card>
-                    </>
                 )
             })}
         </>

@@ -30,7 +30,7 @@ class FormView extends Component {
                 axios.post('http://localhost:3300/api/login', user)
                     .then(res => {
                         localStorage.setItem('jwt', res.data.token)
-                        this.props.history.push('/users')
+                        this.props.history.push('/jokes')
                     })
                     .catch(err => console.log(err))
             }
